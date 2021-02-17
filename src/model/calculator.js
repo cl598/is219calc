@@ -18,32 +18,33 @@ class calculator{
 
     static subtraction(x,y){
         let calculations = new calculations(x,y,subtraction);
-        calculator.calculations.push(calculations);
+        calculator.calculation.push(calculations);
         return calculations.GetResults();
     }
 
     static multiplication(x,y){
         let calculations = new calculations(x,y,multiplication);
-        calculator.calculations.push(calculations);
+        calculator.calculation.push(calculations);
         return calculations.GetResults();
     }
 
     static division(x,y){
         let calculations = new calculations(x,y,division);
-        calculator.calculations.push(calculations);
+        calculator.calculation.push(calculations);
         return calculations.GetResults();
     }
 
     static square(x){
         let calculations = new calculations(x,null,square);
-        calculator.calculations.push(calculations);
+        calculator.calculation.push(calculations);
         return calculations.GetResults();
     }
 
     static squareroot(x){
         let calculations = new calculations(x,null,squareroot);
-        calculator.calculations.push(calculations);
+        calculator.calculation.push(calculations);
         return calculations.GetResults();
     }
-
 }
+
+module.exports = calculator;

@@ -9,4 +9,4 @@ class calculations{
         return this.xy(this.x,this.y)
     }
 }
-module.exports = Calculations;
+module.exports = calculations;
